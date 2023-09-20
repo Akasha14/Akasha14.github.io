@@ -6,30 +6,39 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="./table.css" />
-        <style> 
-            table, th, td {
-  border:1px solid black;
-}
+        <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+            
+            tr:nth-child(even) {
+              background-color: #dddddd;
             }
         </style>
-
     </head>
 
     <body>
         <h2>Planets</h2>
         
         <table>
+            <colgroup>
+                <col span="2" style="background-color: #D6EEEE">
+            </colgroup>
+
             <caption><i>Table 1:</i>&nbsp;Terrestrial Planets.</caption>
-            <thead>
-                
-                
-                
-                
-                
+            <thead>         
                 
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td rowspan="2"colspan="2"></td>
+                    <td>Name</td>
                     <th>Mass(x10^24 kg)</th>
                     <th>Diameter (km)</th>
                     <th>Density (kg/m^3)</th>
@@ -41,10 +50,14 @@
                     <th>Notes</th>
 
                 </tr>
+
             </thead>
+
             <tbody>
-                <tr>
-                    <td rowspan="4"><u>Terrestrial Planets</u></td>
+
+                <tr
+                    <td></td>
+                    <td rowspan="4"colspan="2"><u>Terrestrial Planets</u></td>
                     <th>Mercury</th>
                     <td>0.330</td>
                     <td>4879</td>
@@ -81,6 +94,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
+
                 </tr>
                 <tr>
                     <th>Mars</th>
@@ -95,7 +109,8 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td rowspan="2"><u>Jovian Planets</u></td>
+                    <td rowspan="4"><u>Jovian Planets</u></td> 
+                    <td rowspan="2"><u>Gas Giants</u></td>
                     <th>Jupiter</th>
                     <td></td>
                     <td></td>
@@ -108,7 +123,8 @@
                     <td></td>
 
                 </tr>
-                <tr>     
+                <tr>
+                      
                     <th>Saturn</th>
                     <td></td>
                     <td></td>
@@ -149,7 +165,7 @@
 
                 </tr>
                 <tr>
-                    <td rowspan="2"><u>Dwarf Planets</u></td>
+                    <td rowspan="2"colspan="2"><u>Dwarf Planets</u></td>
                     <th>Pluto</th>
                     <td></td>
                     <td></td>
