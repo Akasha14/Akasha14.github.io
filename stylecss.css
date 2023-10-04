@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+    
+body {
+    background-color:rgb(223, 254, 146);
+}
+
+.wrapper {
+    display: flex;
+    align-items: last baseline;
+    justify-content: last baseline;
+}
+
+div {
+    background-color: rgb(21, 255, 0);
+    margin: 0.6rem;
+    flex: auto;
+    border: 1px solid grey;
+    border-radius: 0.30rem;
+    font-size: 15pt;
+    color: aqua;
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(22, 18, 17);
+}
