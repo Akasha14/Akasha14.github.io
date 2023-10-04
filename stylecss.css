@@ -10,17 +10,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: rem;
 }
 
 div {
     background-color: rgb(21, 255, 0);
     margin: 0.6rem;
     flex: auto;
-    border: 1px solid grey;
+    border: 1px solid rgb(21, 255, 0);
     border-radius: 0.30rem;
     font-size: 15pt;
     color: aqua;
     text-align: center;
+    justify-content: center;
 }
 
 nav {
@@ -30,4 +32,7 @@ nav {
 .lapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+
 }
