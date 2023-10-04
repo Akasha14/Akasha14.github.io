@@ -22,7 +22,7 @@ div {
     font-size: 15pt;
     color: aqua;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 nav {
@@ -32,7 +32,6 @@ nav {
 .lapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     flex-direction: row;
 
 }
