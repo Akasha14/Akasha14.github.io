@@ -1,0 +1,64 @@
+<DOCTYPE!>
+<html>
+
+    <head>
+
+        <style>
+
+            .container {
+                display: grid;
+                grid-template-columns: 2fr, 1fr;
+                grid-template-rows: 2fr, 1fr;
+                gap: 11px;
+                border: 1px solid red;
+            }
+
+            #subgrid {
+                grid-column: 1 / 4;
+                grid-row: 1 / 4;
+                display: grid;
+                gap: inherit;
+                grid-template-columns: subgrid;
+                grid-template-rows: 2fr 1fr;
+            }
+
+            .divcolb {
+                border: 2px solid blue;
+            }
+
+            .divcolr {
+                border: 2px solid rgb(255, 0, 0);
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="divcolr">One</div>
+            <div class="divcolb">Two</div>
+            <div class="divcolr">Three</div>
+            <div class="divcolb">Four</div>
+            <div id="subgrid">
+                <div class="divcolb">Five</div>
+                <div>Six</div>
+                <div>Seven</div>
+                <div>Eight</div>
+            </div>
+            <div>Nine</div>
+            <div>Ten</div>
+        </div>
+
+
+        <a style="margin: 3rem;" href="./index.html">Main Page</a>
+
+
+
+
+    </body>
+
+</html>
+
+
+
+</DOCTYPE>
